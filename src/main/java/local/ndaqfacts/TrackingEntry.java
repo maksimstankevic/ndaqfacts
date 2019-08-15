@@ -19,6 +19,8 @@ public class TrackingEntry {
 
     private long id;
 
+    private long timeStamp;
+
     private double latestPrice;
 
     private long latestUpdate;
