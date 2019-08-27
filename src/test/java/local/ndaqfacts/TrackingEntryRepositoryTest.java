@@ -1,5 +1,7 @@
 package local.ndaqfacts;
 
+import local.ndaqfacts.entity.TrackingEntry;
+import local.ndaqfacts.repository.TrackingEntryRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

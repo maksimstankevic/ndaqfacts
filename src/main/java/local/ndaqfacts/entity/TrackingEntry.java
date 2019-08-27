@@ -1,4 +1,4 @@
-package local.ndaqfacts;
+package local.ndaqfacts.entity;
 
 
 import lombok.AccessLevel;
@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "tracking")
-@AllArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor(access = AccessLevel.PUBLIC)
 @NoArgsConstructor
 public class TrackingEntry {
     @Id
