@@ -45,9 +45,15 @@ public class TrackingEntryController {
 //        articleService.updateArticle(article);
 //        return new ResponseEntity<Article>(article, HttpStatus.OK);
 //    }
-    @DeleteMapping("row/{id}")
-    public ResponseEntity<Void> deleteRow(@PathVariable("timestamp") long timeStamp) {
-        trackingEntryService.deleteTrackingEntry(timeStamp);
+    @DeleteMapping("row/deleteTime-{timestamp}")
+    public ResponseEntity<Void> deleteRowByTimestamp(@PathVariable("timestamp") long timeStamp) {
+        trackingEntryService.deleteTrackingEntryByTimeStamp(timeStamp);
+        return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
+    }
+
+    @DeleteMapping("row/deleteId-{id}")
+    public ResponseEntity<Void> deleteRowById(@PathVariable("id") long id) {
+        trackingEntryService.deleteTrackingEntryById(id);
         return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
     }
 

@@ -9,5 +9,6 @@ public interface ITrackingEntryService {
     TrackingEntry getTrackingEntryById(long trackingEntryId);
     TrackingEntry getTrackingEntryByTimeStamp(long trackingEntryTimeStamp);
     boolean addTrackingEntry(TrackingEntry entry);
-    void deleteTrackingEntry(long trackingTimeStamp);
+    void deleteTrackingEntryByTimeStamp(long trackingTimeStamp);
+    void deleteTrackingEntryById(long id);
 }

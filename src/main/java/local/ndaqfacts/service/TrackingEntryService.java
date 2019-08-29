@@ -40,8 +40,12 @@ public class TrackingEntryService implements ITrackingEntryService{
         }
     }
     @Override
-    public void deleteTrackingEntry(long timeStamp) {
+    public void deleteTrackingEntryByTimeStamp(long timeStamp) {
         trackingEntryRepository.delete(getTrackingEntryByTimeStamp(timeStamp));
+    }
+    @Override
+    public void deleteTrackingEntryById(long id) {
+        trackingEntryRepository.delete(getTrackingEntryById(id));
     }
 
 }
