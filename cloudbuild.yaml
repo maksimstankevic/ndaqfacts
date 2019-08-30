@@ -1,5 +1,6 @@
 steps:
-  - name: maven:3.6.0-jdk-11-slim
+  #RUN CUSTOMIZED MAVEN
+  - name: 'gcr.io/stockfactsproject/ndaqfactsdockerwithdeps
     entrypoint: 'mvn'
     args: ['clean', 'install', '-DskipTests']
   - name: 'gcr.io/cloud-builders/docker'
