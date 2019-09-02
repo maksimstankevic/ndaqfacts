@@ -15,5 +15,5 @@ steps:
       - springbootndaqfacts=gcr.io/stockfactsproject/stockfactsproject
     env:
       - 'CLOUDSDK_COMPUTE_ZONE=europe-north1-b'
-      - 'CLOUDSDK_CONTAINER_CLUSTER=stockfactsapp'
+      - 'CLOUDSDK_CONTAINER_CLUSTER=stockfacts'
 images: ['gcr.io/$PROJECT_ID/stockfactsproject']
