@@ -12,7 +12,7 @@ steps:
       - image
       - deployment
       - stockfacts
-      - web=gcr.io/stockfactsproject/stockfactsproject
+      - springbootndaqfacts=gcr.io/stockfactsproject/stockfactsproject
     env:
       - 'CLOUDSDK_COMPUTE_ZONE=europe-north1-b'
       - 'CLOUDSDK_CONTAINER_CLUSTER=stockfactsapp-cluster'
