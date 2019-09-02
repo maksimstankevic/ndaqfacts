@@ -28,6 +28,7 @@ public class TrackingEntryController {
     @GetMapping("rows")
     public ResponseEntity<List<TrackingEntry>> getAllRows() {
         List<TrackingEntry> list = trackingEntryService.getAllTrackingEntries();
+        list.remove(list.size() - 1);
         return new ResponseEntity<List<TrackingEntry>>(list, HttpStatus.OK);
     }
     @PostMapping("row")
