@@ -12,7 +12,7 @@ steps:
       - image
       - deployment
       - ndaqfacts
-      - stockfactsproject-sha256=gcr.io/stockfactsproject/stockfactsproject
+      - stockfactsproject-sha256=gcr.io/stockfactsproject/stockfactsproject:latest
     env:
       - 'CLOUDSDK_COMPUTE_ZONE=europe-north1-b'
       - 'CLOUDSDK_CONTAINER_CLUSTER=stockfacts'
