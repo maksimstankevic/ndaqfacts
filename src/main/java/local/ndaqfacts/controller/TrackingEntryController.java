@@ -25,17 +25,17 @@ public class TrackingEntryController {
         TrackingEntry trackingEntry = trackingEntryService.getTrackingEntryById(id);
         return new ResponseEntity<TrackingEntry>(trackingEntry, HttpStatus.OK);
     }
-//    @GetMapping("rows")
-//    public ResponseEntity<List<TrackingEntry>> getAllRows() {
-//        List<TrackingEntry> list = trackingEntryService.getAllTrackingEntries();
-//        //list.remove(list.size() - 1);
-//        return new ResponseEntity<List<TrackingEntry>>(list, HttpStatus.OK);
-//    }
-
     @GetMapping("rows")
-    public ResponseEntity<String> getAllRows() {
-        return new ResponseEntity<>("bla", HttpStatus.OK);
+    public ResponseEntity<List<TrackingEntry>> getAllRows() {
+        List<TrackingEntry> list = trackingEntryService.getAllTrackingEntries();
+        //list.remove(list.size() - 1);
+        return new ResponseEntity<List<TrackingEntry>>(list, HttpStatus.OK);
     }
+
+//    @GetMapping("rows")
+//    public ResponseEntity<String> getAllRows() {
+//        return new ResponseEntity<>("bla", HttpStatus.OK);
+//    }
 
     @PostMapping("row")
     public ResponseEntity<Void> addRow(@RequestBody TrackingEntry trackingEntry, UriComponentsBuilder builder) {
