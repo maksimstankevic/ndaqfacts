@@ -10,9 +10,9 @@ steps:
     args:
       - set
       - image
-      - deployment
-      - ndaqfacts
+      - deployment/ndaqfacts
       - stockfactsproject-sha256=gcr.io/stockfactsproject/stockfactsproject:latest
     env:
       - 'CLOUDSDK_COMPUTE_ZONE=europe-north1-b'
       - 'CLOUDSDK_CONTAINER_CLUSTER=stockfacts'
+#images: ['gcr.io/$PROJECT_ID/stockfactsproject']
