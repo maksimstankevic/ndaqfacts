@@ -32,3 +32,6 @@ build/
 
 ### HSQL files
 ndaqfacts.db.*
+
+### sample json
+/json
