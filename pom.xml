@@ -15,7 +15,7 @@
 	<description>iex data based reports</description>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>1.14</java.version>
 	</properties>
 
 	<dependencies>
